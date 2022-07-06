@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+header, main, footer {
+    width: 80%;
+    margin: auto;
+}
+
+header,section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    margin-top: 150px;
+}
+
+.main-image {
+    width: 300px;
+}
+
+button {
+    width: 250px;
+    max-width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 15px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper div {
+    margin-top: 30px;
+}
+
+h2, h3, p {
+    margin-top: 10px;
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.ios:hover {
+    background-color: hsl(171, 67%, 51%);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.mac:hover {
+    background-color: hsl(233, 96%, 74%);
+}
+
+.other-links {
+    background-color: rgb(245, 241, 241);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: hsl(210, 10%, 33%);
+}
+
+@media screen and (min-width:600px) {
+    .wrapper {
+        flex-direction: row;
+        width: 100%;
+        justify-content:center;
+    }
+
+    .wrapper > * {
+        flex: 1 1 50%;
+        margin-left: 20px;
+    }
+    
+    .main-image {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .social-media {
+        align-self: center;
+    }
+
+    .other-links img {
+        width: 50px;
+    }
+
+    .company-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .company-links > * {
+        margin-left: 10px;
+    }
+
+    .tracks .wrapper > * {
+        text-align: left;
+    }
+}
